@@ -1,6 +1,7 @@
 <template>
 
-  <Modal @closeModal="modal_status=false" :onerooms="onerooms" :user_clicked="user_clicked" :modal_status="modal_status" />
+  <Modal @closeModal="modal_status = false" :onerooms="onerooms" :user_clicked="user_clicked"
+    :modal_status="modal_status" />
 
   <div class="menu">
     <a v-for="(menu, i) in menus" :key="i">{{ menu }}</a>
@@ -8,7 +9,8 @@
 
   <Discount />
 
-  <Card @openModal="modal_status=true; user_clicked=$event" :oneroom="onerooms[i]" v-for="(a,i) in onerooms" :key="a" />
+  <Card @openModal="modal_status = true; user_clicked = $event" @increase="warn_count[i]++;" :warn_count="warn_count[i]"
+    :oneroom="onerooms[i]" v-for="(a, i) in onerooms" :key="a" />
 
 </template>
 
@@ -26,13 +28,12 @@ export default {
       user_clicked: 0,
       onerooms: data,
       modal_status: false,
-      menus: ['Home', 'Shop', 'About']
+      menus: ['Home', 'Shop', 'About'],
+      warn_count: [0, 0, 0, 0, 0, 0]
     }
   },
   methods: {
-    increase(num) {
-      this.count[num]++;
-    }
+
   },
 
   components: {
