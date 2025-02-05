@@ -1,30 +1,15 @@
 # vuedongsan
 
-This template should help get you started developing with Vue 3 in Vite.
+![image](https://github.com/user-attachments/assets/717f121e-680e-47b9-8a50-d28448df4512)
 
-## Recommended IDE Setup
+`Vue.js 학습 프로젝트`
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+✔️[기본 문법 ( 데이터바인딩, 반복문, 조건문, Event Handler, 동적 UI, Import/Export )](https://hanstory33.tistory.com/283)
 
-## Customize configuration
+✔️[Component, props, Custom Event](https://hanstory33.tistory.com/284)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+✔️[input, watch 를 활용해 사용자로부터 데이터 받기](https://hanstory33.tistory.com/285)
 
-## Project Setup
+✔️[transition, sort 와 spread operator 를 활용한 데이터 정렬 및 보존](https://hanstory33.tistory.com/286)
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-# Vue.js-Study
+✔️[Lifecycle 과 hook 을 활용한 데이터 수정](https://hanstory33.tistory.com/287)
